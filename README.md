@@ -14,19 +14,15 @@ Options:
   
 
 
-##To filter ICMP traffic
-
+## To filter ICMP traffic
 sudo ./pcapfilter -f "icmp" en0
 
-##To filter DNS traffic (udp53 and tcp53)
-
+## To filter DNS traffic (udp53 and tcp53)
 sudo ./pcapfilter -f "ip and udp port 53 or tcp port 53" en0
 
-##To filter telnet traffic
-
+## To filter telnet traffic
 sudo ./pcapfilter -f "ip and port telnet" en0
 
-##To filter all traffic
-
+## To filter all traffic
 sudo ./pcapfilter en0
 
