@@ -13,16 +13,23 @@ Options:
   device - the local device or interface to enable packet capture
   ```
 
+## Example
 
-## To filter ICMP traffic
+### To filter ICMP traffic
 sudo ./pcapfilter -f "icmp" en0
 
-## To filter DNS traffic (udp53 and tcp53)
+### To filter DNS traffic (udp53 and tcp53)
 sudo ./pcapfilter -f "ip and udp port 53 or tcp port 53" en0
 
-## To filter telnet traffic
+### To filter telnet traffic
 sudo ./pcapfilter -f "ip and port telnet" en0
 
-## To filter all traffic
+### To filter all traffic
 sudo ./pcapfilter en0
 
+## How to Install
+1. Download the binaries from Release Page.
+2. For Windows
+* You will need winpcap, you can download it from <a href="https://www.winpcap.org"> here </a>
+* To determine the device in Windows System, you can run pcapfilter -d which lists all the devices on the machine. Then use the GUID listed and appending with \\device\\NPF_{GUID} as the device.
+pcapfilter -f "ip" \\device\\NPF_{GUID}
