@@ -28,7 +28,7 @@ sudo ./pcapfilter -f "ip and port telnet" en0
 sudo ./pcapfilter en0
 
 ## How to Install
-1. Download the binaries from [Release] (https://github.com/maxng07/packetcap/releases) Page.
+1. Download the binaries from <a href="https://github.com/maxng07/packetcap/releases"> Release </a> Page.
 2. For Windows
 * You will need winpcap, you can download it from <a href="https://www.winpcap.org"> here </a>
 * To determine the device in Windows System, you can run pcapfilter -d which lists all the devices on the machine. Then use the GUID listed and appending with `\\device\\NPF_{GUID}` as the device.
