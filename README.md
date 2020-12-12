@@ -31,5 +31,5 @@ sudo ./pcapfilter en0
 1. Download the binaries from Release Page.
 2. For Windows
 * You will need winpcap, you can download it from <a href="https://www.winpcap.org"> here </a>
-* To determine the device in Windows System, you can run pcapfilter -d which lists all the devices on the machine. Then use the GUID listed and appending with \\device\\NPF_{GUID} as the device.
-pcapfilter -f "ip" \\device\\NPF_{GUID}
+* To determine the device in Windows System, you can run pcapfilter -d which lists all the devices on the machine. Then use the GUID listed and appending with `\\device\\NPF_{GUID}` as the device.
+`pcapfilter -f "ip" \\device\\NPF_{GUID}`
