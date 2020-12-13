@@ -8,6 +8,7 @@ Usage: pcap [options...] [device]
 Options: 
   -d list all available network devices on machine
   -f pcap filter string to be used
+  -w write packet filter to filename specified
   -h help menu
   
   device - the local device or interface to enable packet capture
@@ -32,4 +33,8 @@ sudo ./pcapfilter en0
 2. For Windows
 * You will need winpcap, you can download it from <a href="https://www.winpcap.org"> here </a>
 * To determine the device in Windows System, you can run pcapfilter -d which lists all the devices on the machine. Then use the GUID listed and appending with `\\device\\NPF_{GUID}` as the device.
+
 `pcapfilter -f "ip" \\device\\NPF_{GUID}`
+
+Changes:
+Added Version 2 - allows the abillity to write packet capture output to local file. 
