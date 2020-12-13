@@ -28,6 +28,9 @@ sudo ./pcapfilter -f "ip and port telnet" en0
 ### To filter all traffic
 sudo ./pcapfilter en0
 
+### To save output to local pcap file
+sudo ./pcapfilter -f "ip and udp port 53" -w test.pcap en0
+
 ## How to Install
 1. Download the binaries from <a href="https://github.com/maxng07/packetcap/releases"> Release </a> Page.
 2. For Windows
