@@ -36,5 +36,5 @@ sudo ./pcapfilter en0
 
 `pcapfilter -f "ip" \\device\\NPF_{GUID}`
 
-Changes:
+## Changes:
 Added Version 2 - allows the abillity to write packet capture output to local file. 
