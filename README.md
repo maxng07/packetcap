@@ -41,3 +41,11 @@ sudo ./pcapfilter -f "ip and udp port 53" -w test.pcap en0
 
 ## Changes:
 Added Version 2 - allows the abillity to write packet capture output to local file. 
+
+## Licensing
+packetcap uses google/gopacket libary
+
+```
+Copyright (c) 2012 Google, Inc. All rights reserved.
+Copyright (c) 2009-2011 Andreas Krennmair. All rights reserved.
+```
