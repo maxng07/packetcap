@@ -1,7 +1,7 @@
 # packetcap
 Lightweight Packet Capture with filtering option 
 
-PacketCap allows microsecond packets in Layer 2, 3 and 4 to be dumped to terminal, operates in promiscuous mode to capture packet length up to 1600 bytes. Supports filtering option to look at specific packets. The filtering syntax is implemented using <a href="https://linux.die.net/man/7/pcap-filter"> Linux pcap-filter </a>. PacketCap is lightweight and useful when wireshark or tcpdump is not available. Implemented using <a href="https://github.com/google/gopacket"> gopacket </a> library that does the heavy lifting for BPF byte code filtering and pcap-filter string to BPF byte code.
+PacketCap allows microsecond packets in Layer 2, 3 and 4 to be dumped to terminal, operates in promiscuous mode to capture packet length up to 1600 bytes. Supports filtering option to look at specific packets. The filtering syntax is implemented using <a href="https://linux.die.net/man/7/pcap-filter"> Linux pcap-filter </a>. PacketCap is lightweight and useful when wireshark or tcpdump is not available. Implemented using <a href="https://github.com/google/gopacket"> gopacket </a> library that does the heavy lifting for BPF byte code filtering and pcap-filter string to BPF byte code. Supports writing of captured packet to pcap file format and sending captured packet to remote target using udp.
 
 ```
 Usage: pcap [options...] [device]
@@ -32,6 +32,13 @@ sudo ./pcapfilter en0
 ### To save output to local pcap file
 sudo ./pcapfilter -f "ip and udp port 53" -w test.pcap en0
 
+### To list all known devices/interfaces on local machine
+sudo ./pcapfilter -d
+
+### To send captured packet to remote target machine
+sudo ./pcapfilter -f "ip and udp port 53" -r 127.0.0.1:5555 en0
+See Wiki for more details
+
 ## How to Install
 1. Download the binaries from <a href="https://github.com/maxng07/packetcap/releases"> Release </a> Page.
 2. For Windows
@@ -42,6 +49,7 @@ sudo ./pcapfilter -f "ip and udp port 53" -w test.pcap en0
 
 ## Changes:
 Added Version 2 - allows the abillity to write packet capture output to local file. 
+Added Version 2.1 - added support for sending captured packet to remote udp target and enhance the display for available local devices/interfaces
 
 ## Licensing
 packetcap uses google/gopacket libary
