@@ -51,6 +51,9 @@ See Wiki for more details
 Added Version 2 - allows the abillity to write packet capture output to local file. 
 Added Version 2.1 - added support for sending captured packet to remote udp target and enhance the display for available local devices/interfaces
 
+## Planned Enhancement
+DTLS and/or gRPC target for encrypted tunnel
+
 ## Licensing
 packetcap uses google/gopacket libary
 
