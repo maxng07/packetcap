@@ -9,6 +9,7 @@ Options:
   -d list all available network devices on machine
   -f pcap filter string to be used
   -w write packet filter to filename specified
+  -r send filtered packet to remote target ipaddr:port using udp tunnel
   -h help menu
   
   device - the local device or interface to enable packet capture
