@@ -36,7 +36,7 @@ sudo ./pcapfilter -f "ip and udp port 53" -w test.pcap en0
 sudo ./pcapfilter -d
 
 ### To send captured packet to remote target machine
-sudo ./pcapfilter -f "ip and udp port 53" -r 127.0.0.1:5555 en0
+sudo ./pcapfilter -f "ip and udp port 53" -r 127.0.0.1:5555 en0 <br>
 See Wiki for more details
 
 ## How to Install
