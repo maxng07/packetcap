@@ -47,11 +47,11 @@ sudo ./pcapfilter -f "ip and udp port 53" -r 127.0.0.1:5555 en0 <br>
 See <a href="https://github.com/maxng07/packetcap/wiki"> Wiki </a> for more details
 
 ### To capture only up to specify packet count
-sudo pcapfilter -f "tcp port 80" -c 2
+sudo pcapfilter -f "tcp port 80" -c 2 </br>
 sudo pcapfilter -f "udp port 53" -c 3 -w dns.pcap
 
 ### To capture only TCP Options
-sudo pcapfilter -f "tcp port 80" -tcpoption -c 2
+sudo pcapfilter -f "tcp port 80" -tcpoption -c 2 </br>
 sudo pcapfilter -f "udp port 53" -tcpoption
 
 ## How to Install
